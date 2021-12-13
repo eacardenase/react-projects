@@ -4,6 +4,7 @@ import Tours from "./Tours";
 // ATTENTION!!!!!!!!!!
 // I SWITCHED TO PERMANENT DOMAIN
 const url = "https://course-api.com/react-tours-project";
+
 function App() {
     const [loading, setLoading] = useState(true);
     const [tours, setTour] = useState([]);
@@ -41,6 +42,7 @@ function App() {
             <main>
                 <div className="title">
                     <h2>No tours left</h2>
+                    <div className="underline"></div>
                     <button className="btn" onClick={() => fetchTours()}>
                         load tours
                     </button>
